@@ -1,0 +1,8 @@
+﻿<table><tr><td>Nombre de lignes créés : @ViewBag.nbreRecords </td></tr></table>
+<table><tr><td> <span class="erreur">@ViewBag.message </span> </td></tr></table>
+ <div class="container">  
+    <form asp-controller="Country" asp-action="UploadFile" enctype="multipart/form-data" method="post">
+        Uploader un fichier   <input type="file" name="excelFile" id="upload"><br /><br />
+        <button type="submit" class="btn_submit" value="valider" style="width : 100px;">Valider</button>
+    </form>
+</div>

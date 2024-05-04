@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MesEntites</id>
+    <version>1.0.0</version>
+    <authors>MesEntites</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\Entities\bin\Debug\net8.0\MesEntites.dll" target="lib\net8.0\MesEntites.dll" />
+  </files>
+</package>

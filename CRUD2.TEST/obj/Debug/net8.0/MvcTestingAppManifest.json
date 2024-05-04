@@ -1,0 +1,8 @@
+{
+  "CountryServicesContrat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\ServicesContrat",
+  "CRUD, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD",
+  "MesEntites, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\Entities",
+  "RepositoryService, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\RepositoryService",
+  "RepositoryServicesContrat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\RepositoryServicesContrat",
+  "Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\Services"
+}

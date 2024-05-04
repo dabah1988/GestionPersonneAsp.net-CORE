@@ -1,0 +1,242 @@
+﻿/* Reset CSS */
+body, table, th, td 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6; /* Couleur de fond de la page */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Bordure inférieure pour chaque cellule */
+}
+
+th {
+    background-color: #3498db; /* Couleur de fond pour les entêtes */
+    color: #fff; /* Couleur de texte pour les entêtes */
+    font-weight: bold; /* Texte en gras pour les entêtes */
+    text-transform: uppercase; /* Conversion en majuscules pour les entêtes */
+}
+
+tbody tr:hover {
+    background-color: #f2f2f2; /* Couleur de fond au survol */
+}
+
+/* Alternance de couleur pour les lignes */
+tbody tr:nth-child(even) {
+    background-color: #ecf0f1; /* Couleur de fond pour les lignes impaires */
+}
+
+/* Style pour les données */
+td {
+    color: #333; /* Couleur de texte pour les données */
+}
+
+    /* Style pour les liens */
+    td a {
+        color: #3498db; /* Couleur des liens */
+        text-decoration: none; /* Suppression du soulignement */
+        transition: color 0.3s; /* Transition douce de la couleur */
+    }
+
+        td a:hover {
+            color: #2980b9; /* Couleur des liens au survol */
+        }
+
+h1 {
+    font-size: 2rem; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    color: #333; /* Couleur du texte */
+    text-align: left; /* Alignement centré */
+    margin: 20px 0; /* Marge supérieure et inférieure */
+    text-transform: uppercase; /* Conversion en majuscules */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+#form {
+    display: flex; /* Utilisation du modèle de disposition flexbox */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: center; /* Centrer les éléments verticalement */
+    text-align: center; /* Aligner le texte au centre */
+    border: 2px solid #ccc; /* Bordure autour de la div form */
+    border-radius: 10px; /* Coins arrondis de la div form */
+    padding: 20px; /* Espacement interne */
+}
+
+#select, #search {
+    display: inline-block; /* Rendre les divs en éléments en ligne */
+    margin-right: 20px; /* Marge entre les deux divs */
+    border: 1px solid #ccc; /* Bordure autour de select et textarea */
+    border-radius: 5px; /* Coins arrondis de select et textarea */
+}
+
+select {
+    width: 200px; /* Largeur du sélecteur */
+    padding: 10px; /* Espacement interne */
+}
+
+textarea {
+    width: 300px; /* Largeur de la zone de texte */
+    height: 20px; /* Hauteur de la zone de texte */
+    padding: 10px; /* Espacement interne */
+    resize: none; /* Désactiver le redimensionnement */
+}
+
+    /* Placeholder style */
+    textarea::placeholder {
+        color: #999; /* Couleur du texte du placeholder */
+    }
+.search button {
+    background-color: #3498db; /* Couleur de fond bleue */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    padding: 10px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur au survol */
+}
+
+    .search  button:hover {
+        background-color: #2980b9; /* Changement de couleur de fond au survol */
+    }
+
+.no-data-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .no-data-message img {
+        width: 100px; /* Définissez la largeur de l'image selon vos besoins */
+        height: auto; /* Laissez la hauteur ajustée automatiquement */
+        margin-bottom: 20px;
+    }
+
+a {
+    color: #3498db; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimer le soulignement */
+    transition: color 0.3s; /* Transition douce de la couleur */
+}
+
+    a:hover {
+        color: #2980b9; /* Couleur du texte des liens au survol */
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    max-width: 300px;
+    margin: 10 auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+ 
+
+ 
+.input-container {
+    position: relative;
+}
+
+input[type="text"] {
+    padding-right: 30px; /* Pour laisser de l'espace pour l'icône */
+}
+
+.calendar-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+.spectrum-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+    .spectrum-list li {
+        display: inline-block;
+        width: 50px;
+        margin-right: 10px; /* Espace entre les éléments */
+    }
+
+        .spectrum-list li a {
+            display: block;
+            text-decoration: none;
+            border: 1px solid #4CAF50; /* Bordure de 1px solide avec une couleur verte */
+            padding: 5px; /* Espacement à l'intérieur du lien */
+            color: #4CAF50; /* Couleur du texte */
+        }
+
+            .spectrum-list li a:hover {
+                background-color: #4CAF50; /* Couleur de fond au survol */
+                color: white; /* Couleur du texte au survol */
+            }
+
+    /* Supprime les puces des éléments de liste */
+    .spectrum-list li {
+        list-style-type: none;
+    }
+
+        /* Supprime le soulignement des liens */
+        .spectrum-list li a {
+            text-decoration: none;
+        }
+
+.container {
+    margin-bottom: 20px; /* Espacement entre les conteneurs */
+}
+
+.btn_submit {
+    width: auto; /* Largeur automatique pour s'adapter au contenu */
+    padding: 10px; /* Ajustez le padding selon vos besoins */
+    background-color: #4CAF50; /* Couleur de fond attrayante */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Arrondi les coins */
+    cursor: pointer; /* Curseur indiquant une action cliquable */
+}
+
+    .btn_submit:hover {
+        background-color: #45a049; /* Changement de couleur de fond au survol */
+    }
+
+input[type="file"] {
+    display: block; /* Affiche l'élément sur une nouvelle ligne */
+    margin-top: 10px; /* Espacement entre l'élément et le bouton */
+}

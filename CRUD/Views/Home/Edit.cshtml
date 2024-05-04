@@ -1,0 +1,65 @@
+﻿@using MesEntites;
+@using ServicesContrat
+@model CountryPersonne
+<table>
+    <thead>
+        <tr>
+            <td colspan="4" align="center"><a asp-controller="Home" asp-action="Index" href="/">Retour à la liste</a></td>
+            <td colspan="3" align="center"><a asp-controller="Home" asp-action="Create" href="/Create">Créer une personne</a></td>
+        </tr>
+        <tr>
+            <th colspan="6">Un nouveau joueur </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <div class="form-container">
+                    <h1>Insertion de Personne</h1>
+                    <form action="/Edit" method="post">
+                        <input type="text" value="@Model.Person.PersonId" name="PersonId" style="display:none" />
+                        <div class="form-group">
+                            <label for="personName">Nom de la personne:</label>
+                            <input type="text" id="personName" name="personName" value="@Model.Person.PersonName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date de naissance:</label>
+                            <input type="text" id="dateOfBirth" name="DateOfBirth" value="@Model.Person.DateofBirth">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Genre:</label>
+                            <select id="gender" name="gender" " required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="Email" name="Email" value="@Model.Person.Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="countryId">Pays:</label>
+                            <select id="countryId" name="countryId">
+                                <option value="Model.Country.countryId"> @Model.Country.countryName</option>                         
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Adresse:</label>
+                            <input type="text" id="Adress" name="Adress" value="@Model.Person.Adress"  required>
+                        </div>
+                        <div class="form-group">
+                            <label for="receivesNewsLetter">Reçoit des newsletters:</label>
+                            <input type="checkbox" id="receivesNewsLetter" name="receivesNewsLetter" value="@Model.Person.ReceivesNewsLetter">
+                        </div>
+                        <button type="submit">Modifier</button>
+                    </form>
+                </div>
+                <
+            </td>
+        </tr>
+    </tbody>
+</table>

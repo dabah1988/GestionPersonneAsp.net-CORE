@@ -1,0 +1,73 @@
+﻿@using Entities;
+@using ServicesContrat
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        const datePickerInput = document.getElementById('dateOfBirth');
+        const calendarIcon = document.querySelector('.calendar-icon');
+
+        calendarIcon.addEventListener('click', function () {
+            datePickerInput.focus(); // Focus sur le champ de date
+        });
+    });
+
+</script>
+<table>
+    <thead>
+        <tr>
+            <td colspan="4" align="center"><a asp-controller="Home" asp-action="Index" href="/">Retour à la liste</a></td>
+            <td colspan="3" align="center"><a asp-controller="Home" asp-action="Create" href="/Create">Créer une personne</a></td>
+        </tr>
+        <tr>
+            <th colspan="6">Un nouveau joueur </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+<tr><td colspan="7">
+    <div class="form-container">
+        <h1>Insertion de Personne</h1>
+    <form action="/Create" method="post">
+            <div class="form-group">
+                <label for="personName">Nom de la personne:</label>
+                <input type="text" id="personName" name="personName" required>
+            </div>
+
+                        <div class="form-group">
+                            <label for="dateOfBirth">Date de naissance:</label>
+                            <input type="text" id="dateOfBirth" name="dateOfBirth" >
+                        </div>
+            <div class="form-group">
+                <label for="gender">Genre:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="countryId">Pays:</label>
+                            <select id="countryId" name="countryId">
+                                @foreach (Country lePays in ViewBag.ListePays)
+                                {
+                         <option value="@lePays.countryId" > @lePays.countryName</option>
+                                }
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="address">Adresse:</label>
+                            <input type="text" id="Adress" name="Adress" required>
+            </div>
+            <div class="form-group">
+                <label for="receivesNewsLetter">Reçoit des newsletters:</label>
+                <input type="checkbox" id="receivesNewsLetter" name="receivesNewsLetter">
+            </div>
+            <button type="submit">Ajouter</button>
+        </form>
+    </div>
+    <</td></tr>
+    </tbody>
+    </table>

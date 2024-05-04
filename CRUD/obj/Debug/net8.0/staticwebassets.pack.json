@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\wwwroot\\images\\360_F_586210337_WOGOw0l7raEB8F61Muc4hWbvVcyQdk9Z.jpg",
+      "PackagePath": "staticwebassets\\images\\360_F_586210337_WOGOw0l7raEB8F61Muc4hWbvVcyQdk9Z.jpg"
+    },
+    {
+      "Id": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\wwwroot\\javascript\\script.js",
+      "PackagePath": "staticwebassets\\javascript\\script.js"
+    },
+    {
+      "Id": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\wwwroot\\rotativa\\wkhtmltopdf.exe",
+      "PackagePath": "staticwebassets\\rotativa\\wkhtmltopdf.exe"
+    },
+    {
+      "Id": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\wwwroot\\styles\\style.css",
+      "PackagePath": "staticwebassets\\styles\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CRUD.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CRUD.props",
+      "PackagePath": "build\\CRUD.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CRUD.props",
+      "PackagePath": "buildMultiTargeting\\CRUD.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CRUD.props",
+      "PackagePath": "buildTransitive\\CRUD.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

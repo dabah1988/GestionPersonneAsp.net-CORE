@@ -1,0 +1,261 @@
+2024-04-29 16:44:03.744 +02:00 [FTL] Log critical
+2024-04-29 16:44:03.870 +02:00 [WRN] Log warning
+2024-04-29 16:44:04.116 +02:00 [INF] User profile is available. Using 'C:\Users\yvesd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 16:44:05.600 +02:00 [INF] Now listening on: http://localhost:5219
+2024-04-29 16:44:05.684 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 16:44:05.686 +02:00 [INF] Hosting environment: Development
+2024-04-29 16:44:05.688 +02:00 [INF] Content root path: D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\CRUD
+2024-04-29 16:44:25.507 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/ - null null
+2024-04-29 16:44:26.837 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 16:44:26.932 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, Boolean, Boolean) on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:44:39.314 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:44:39.315 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:45:28.035 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:45:28.042 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:45:29.276 +02:00 [INF] in GetAllPersons  
+2024-04-29 16:45:46.140 +02:00 [INF] Executed DbCommand (960ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 16:45:46.997 +02:00 [INF] in GetAllPersons  
+2024-04-29 16:45:47.013 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 16:45:47.673 +02:00 [INF] Executed DbCommand (387ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:45:47.689 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:45:47.699 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:45:47.703 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:45:47.708 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:45:47.712 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:45:47.719 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:45:59.129 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:45:59.132 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:46:01.626 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:46:01.698 +02:00 [INF] Executing ViewResult, running view Index.
+2024-04-29 16:46:01.970 +02:00 [INF] Executed ViewResult - view Index executed in 275.3658ms.
+2024-04-29 16:46:01.976 +02:00 [INF] Executed action CRUD.controllers.HomeController.Index (CRUD) in 95040.5826ms
+2024-04-29 16:46:01.979 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 16:46:01.998 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/ - 200 null text/html; charset=utf-8 96504.2987ms
+2024-04-29 16:46:13.806 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/styles/style.css - null null
+2024-04-29 16:46:14.512 +02:00 [INF] Sending file. Request path: '/styles/style.css'. Physical path: 'D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\CRUD\wwwroot\styles\style.css'
+2024-04-29 16:46:14.518 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/styles/style.css - 499 6649 text/css 711.6046ms
+2024-04-29 16:46:16.360 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 16:46:16.370 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 9.2014ms
+2024-04-29 16:46:16.794 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/javascript/script.js - null null
+2024-04-29 16:46:16.794 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_vs/browserLink - null null
+2024-04-29 16:46:16.806 +02:00 [INF] Sending file. Request path: '/javascript/script.js'. Physical path: 'D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\CRUD\wwwroot\javascript\script.js'
+2024-04-29 16:46:16.807 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/javascript/script.js - 499 331 text/javascript 12.9103ms
+2024-04-29 16:46:20.278 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3483.361ms
+2024-04-29 16:46:24.508 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/favicon.ico - null null
+2024-04-29 16:46:24.543 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/favicon.ico - 499 null null 35.1932ms
+2024-04-29 16:46:24.547 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5219/favicon.ico, Response status code: 499
+2024-04-29 16:46:57.626 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/Edit?PersonId=4fa348f3-75c7-4176-b97c-3b1853f8f0fa - null null
+2024-04-29 16:46:57.646 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.EditAsync (CRUD)'
+2024-04-29 16:46:57.658 +02:00 [INF] Route matched with {action = "Edit", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EditAsync(System.String) on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:46:57.677 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:46:57.678 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:47:03.909 +02:00 [INF] in GetPersonneById  
+2024-04-29 16:47:03.935 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 16:47:04.226 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MesEntites.ApplicationDb'.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2024-04-29 16:47:05.135 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:47:09.165 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:47:09.169 +02:00 [INF] Executed action CRUD.controllers.HomeController.EditAsync (CRUD) in 11508.9975ms
+2024-04-29 16:47:09.171 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.EditAsync (CRUD)'
+2024-04-29 16:47:09.175 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at RepositoryService.RepositoryPerson.GetAllPersons() in D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\RepositoryService\RepositoryPerson.cs:line 38
+   at Services.PersonneService.GetPersonneById(Nullable`1 personId) in D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\Services\PersonneService.cs:line 71
+   at CRUD.controllers.HomeController.EditAsync(String PersonId) in D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\CRUD\controllers\HomeController.cs:line 125
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-29 16:47:10.193 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/Edit?PersonId=4fa348f3-75c7-4176-b97c-3b1853f8f0fa - 500 null text/html; charset=utf-8 12566.2715ms
+2024-04-29 16:47:10.303 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_vs/browserLink - null null
+2024-04-29 16:47:10.306 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 16:47:10.312 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 5.0344ms
+2024-04-29 16:47:10.334 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.7902ms
+2024-04-29 16:47:34.567 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 16:47:34.571 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 3.9847ms
+2024-04-29 16:47:40.143 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/Create - null null
+2024-04-29 16:47:40.153 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:47:40.162 +02:00 [INF] Route matched with {action = "Create", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:47:40.165 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:47:40.167 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:47:43.877 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+2024-04-29 16:47:43.895 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:47:45.198 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:47:45.204 +02:00 [INF] Executing ViewResult, running view Create.
+2024-04-29 16:47:45.227 +02:00 [INF] Executed ViewResult - view Create executed in 24.6742ms.
+2024-04-29 16:47:45.228 +02:00 [INF] Executed action CRUD.controllers.HomeController.Create (CRUD) in 5064.5607ms
+2024-04-29 16:47:45.230 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:47:45.232 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/Create - 200 null text/html; charset=utf-8 5088.3589ms
+2024-04-29 16:47:45.251 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_vs/browserLink - null null
+2024-04-29 16:47:45.253 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 16:47:45.261 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 7.5694ms
+2024-04-29 16:47:45.272 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_vs/browserLink - 200 null text/javascript; charset=UTF-8 21.367ms
+2024-04-29 16:48:57.612 +02:00 [FTL] Log critical
+2024-04-29 16:48:57.701 +02:00 [WRN] Log warning
+2024-04-29 16:48:57.775 +02:00 [INF] User profile is available. Using 'C:\Users\yvesd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 16:48:58.038 +02:00 [INF] Now listening on: http://localhost:5219
+2024-04-29 16:48:58.104 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 16:48:58.107 +02:00 [INF] Hosting environment: Development
+2024-04-29 16:48:58.109 +02:00 [INF] Content root path: D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\CRUD
+2024-04-29 16:49:00.216 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/ - null null
+2024-04-29 16:49:00.322 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 16:49:00.411 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, Boolean, Boolean) on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:49:02.236 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:49:02.240 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:51:05.799 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:51:05.822 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:51:06.886 +02:00 [INF] in GetAllPersons  
+2024-04-29 16:51:09.961 +02:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 16:51:10.211 +02:00 [INF] in GetAllPersons  
+2024-04-29 16:51:10.228 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 16:51:10.457 +02:00 [INF] Executed DbCommand (83ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:51:10.474 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:51:10.479 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:51:10.484 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:51:10.488 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:51:10.492 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 16:51:10.500 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:51:15.021 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:51:15.061 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:51:16.576 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:51:16.590 +02:00 [INF] Executing ViewResult, running view Index.
+2024-04-29 16:51:16.755 +02:00 [INF] Executed ViewResult - view Index executed in 167.6791ms.
+2024-04-29 16:51:16.761 +02:00 [INF] Executed action CRUD.controllers.HomeController.Index (CRUD) in 136346.643ms
+2024-04-29 16:51:16.764 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 16:51:16.775 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/ - 200 null text/html; charset=utf-8 136570.343ms
+2024-04-29 16:51:17.118 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/styles/style.css - null null
+2024-04-29 16:51:17.121 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_vs/browserLink - null null
+2024-04-29 16:51:17.122 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 16:51:17.130 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 7.5338ms
+2024-04-29 16:51:17.281 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_vs/browserLink - 200 null text/javascript; charset=UTF-8 159.407ms
+2024-04-29 16:51:17.314 +02:00 [INF] Sending file. Request path: '/styles/style.css'. Physical path: 'D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\CRUD\wwwroot\styles\style.css'
+2024-04-29 16:51:17.317 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/styles/style.css - 499 6649 text/css 199.5002ms
+2024-04-29 16:51:23.575 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/Create - null null
+2024-04-29 16:51:23.598 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:51:23.607 +02:00 [INF] Route matched with {action = "Create", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:51:23.617 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:51:23.621 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:51:30.896 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+2024-04-29 16:51:30.910 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:51:32.121 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:51:32.126 +02:00 [INF] Executing ViewResult, running view Create.
+2024-04-29 16:51:32.148 +02:00 [INF] Executed ViewResult - view Create executed in 24.3821ms.
+2024-04-29 16:51:32.149 +02:00 [INF] Executed action CRUD.controllers.HomeController.Create (CRUD) in 8538.5947ms
+2024-04-29 16:51:32.151 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:51:32.153 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/Create - 200 null text/html; charset=utf-8 8578.0631ms
+2024-04-29 16:51:32.197 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_vs/browserLink - null null
+2024-04-29 16:51:32.198 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 16:51:32.212 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 10.0633ms
+2024-04-29 16:51:32.226 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.1953ms
+2024-04-29 16:52:14.901 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5219/Create - application/x-www-form-urlencoded 207
+2024-04-29 16:52:14.917 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:52:14.934 +02:00 [INF] Route matched with {action = "Create", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CountryServicesContrat.DTO.PersonAddRequest) on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:52:40.181 +02:00 [INF] Authorization failed for the request at filter 'CRUD.Filters.AuthorizationFilter.TokenAuthorizationFilter'.
+2024-04-29 16:52:40.186 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 401
+2024-04-29 16:52:40.187 +02:00 [INF] Executed action CRUD.controllers.HomeController.Create (CRUD) in 25249.0557ms
+2024-04-29 16:52:40.189 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:52:40.190 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5219/Create - 401 0 null 25288.9708ms
+2024-04-29 16:53:47.324 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/Create - null null
+2024-04-29 16:53:47.360 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:53:47.362 +02:00 [INF] Route matched with {action = "Create", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:53:47.364 +02:00 [INF] In OnActionExecuting
+2024-04-29 16:53:47.365 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 16:54:05.576 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/favicon.ico - null null
+2024-04-29 16:54:05.577 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 16:54:05.580 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/favicon.ico - 499 null null 3.7748ms
+2024-04-29 16:54:05.581 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 4.2778ms
+2024-04-29 16:54:05.587 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5219/favicon.ico, Response status code: 499
+2024-04-29 16:54:05.668 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+2024-04-29 16:54:05.671 +02:00 [INF] In OnActionExecuted
+2024-04-29 16:54:06.854 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 16:54:06.856 +02:00 [INF] Executing ViewResult, running view Create.
+2024-04-29 16:54:06.857 +02:00 [INF] Executed ViewResult - view Create executed in 2.1786ms.
+2024-04-29 16:54:06.859 +02:00 [INF] Executed action CRUD.controllers.HomeController.Create (CRUD) in 19495.4461ms
+2024-04-29 16:54:06.860 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:54:06.861 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/Create - 200 null text/html; charset=utf-8 19537.3209ms
+2024-04-29 16:54:43.628 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5219/Create - application/x-www-form-urlencoded 207
+2024-04-29 16:54:43.644 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:54:43.645 +02:00 [INF] Route matched with {action = "Create", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(CountryServicesContrat.DTO.PersonAddRequest) on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 16:55:48.415 +02:00 [INF] Authorization failed for the request at filter 'CRUD.Filters.AuthorizationFilter.TokenAuthorizationFilter'.
+2024-04-29 16:55:48.418 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 401
+2024-04-29 16:55:48.423 +02:00 [INF] Executed action CRUD.controllers.HomeController.Create (CRUD) in 64775.0353ms
+2024-04-29 16:55:48.425 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Create (CRUD)'
+2024-04-29 16:55:48.426 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5219/Create - 401 0 null 64798.682ms

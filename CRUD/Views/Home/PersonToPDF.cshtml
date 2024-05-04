@@ -1,0 +1,46 @@
+﻿ @using MesEntites
+ @using Entities
+ @using Services
+ @using ServicesContrat.DTO
+@{
+    Layout = null;
+}
+@model List<CountryPersonne>
+<link rel="stylesheet"  href="@("http://"+Context.Request.Host.ToString())/styles/style.css" />
+<table>
+    <thead>
+        <tr>
+            <th>Nom et prénoms</th>
+            <th>Email</th>
+            <th>Pays</th>
+            <th>Adresse</th>
+            <th>Genre</th>
+            <th>Date de Naissance</th>
+            <th>Réception de News</th>
+            <th>Modifier</th>
+            <th>Supprimer</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Exemple de ligne de données -->
+        @if (Model != null && Model.Count > 0)
+        {
+            @foreach (CountryPersonne laPersonne in Model)
+            {
+                if (laPersonne == null) throw new ArgumentNullException("Personne nulle dans index");
+                if (laPersonne.Person == null || laPersonne.Country == null) throw new ArgumentNullException("Personne ou pays nulle dans index");
+                <tr>
+                    <td><a href="/?searchBy=@nameof(Person.PersonName)&searchValue=@laPersonne.Person.PersonName&ortColumnByAscending=true&isSorted=true">@laPersonne.Person.PersonName </a></td>
+                    <td>@laPersonne.Person.Email</td>
+                    <td>@laPersonne?.Country.countryName</td>
+                    <td>@laPersonne.Person.Adress</td>
+                    <td>@laPersonne.Person.Gender</td>
+                    <td>@laPersonne.Person.DateofBirth</td>
+                    <td>@laPersonne.Person.ReceivesNewsLetter</td>
+                    <td><a asp-controller="Home" asp-action="Edit" href="/Edit?PersonId=@laPersonne.Person.PersonId">Edit</a></td>
+                    <td><a asp-controller="Home" asp-action="Delete" href="/Delete?PersonId=@laPersonne.Person.PersonId">Delete</a></td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

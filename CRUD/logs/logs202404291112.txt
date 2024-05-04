@@ -1,0 +1,50 @@
+2024-04-29 11:12:14.616 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/ - null null
+2024-04-29 11:12:15.282 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 11:12:15.372 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, Boolean, Boolean) on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 11:12:18.000 +02:00 [INF] In OnActionExecuting
+2024-04-29 11:12:18.001 +02:00 [INF] In OnActionExecuting
+2024-04-29 11:12:18.083 +02:00 [INF] in GetAllPersons  
+2024-04-29 11:12:21.624 +02:00 [INF] Executed DbCommand (116ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 11:12:21.803 +02:00 [INF] in GetAllPersons  
+2024-04-29 11:12:21.809 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 11:12:22.264 +02:00 [INF] Executed DbCommand (301ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 11:12:22.274 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 11:12:22.278 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 11:12:22.281 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 11:12:22.284 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 11:12:22.286 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 11:12:22.289 +02:00 [INF] In OnActionExecuted
+2024-04-29 11:12:22.290 +02:00 [INF] In OnActionExecuted
+2024-04-29 11:12:22.302 +02:00 [INF] Executing ViewResult, running view Index.
+2024-04-29 11:12:22.402 +02:00 [INF] Executed ViewResult - view Index executed in 103.77ms.
+2024-04-29 11:12:22.407 +02:00 [INF] Executed action CRUD.controllers.HomeController.Index (CRUD) in 7031.9422ms
+2024-04-29 11:12:22.410 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 11:12:22.423 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/ - 200 null text/html; charset=utf-8 7813.0025ms
+2024-04-29 11:12:22.528 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_vs/browserLink - null null
+2024-04-29 11:12:22.529 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 11:12:22.536 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 6.0518ms
+2024-04-29 11:12:22.680 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_vs/browserLink - 200 null text/javascript; charset=UTF-8 151.9859ms

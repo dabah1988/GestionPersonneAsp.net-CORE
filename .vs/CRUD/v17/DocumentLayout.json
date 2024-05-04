@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|d:\\cours\\c# middle level\\asp.net core\\crud\\crud\\crud\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|solutionrelative:crud\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|d:\\cours\\c# middle level\\asp.net core\\crud\\crud\\crud\\filters\\actionfilter\\personlistactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|solutionrelative:crud\\filters\\actionfilter\\personlistactionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|d:\\cours\\c# middle level\\asp.net core\\crud\\crud\\crud\\filters\\authorizationfilter\\tokenauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|solutionrelative:crud\\filters\\authorizationfilter\\tokenauthorizationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|d:\\cours\\c# middle level\\asp.net core\\crud\\crud\\crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|solutionrelative:crud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|d:\\cours\\c# middle level\\asp.net core\\crud\\crud\\crud\\crud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|solutionrelative:crud\\crud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|d:\\cours\\c# middle level\\asp.net core\\crud\\crud\\crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BBE97E4-9486-4B02-A843-591035EF2345}|CRUD\\CRUD.csproj|solutionrelative:crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TokenAuthorizationFilter.cs",
+              "DocumentMoniker": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\Filters\\AuthorizationFilter\\TokenAuthorizationFilter.cs",
+              "RelativeDocumentMoniker": "CRUD\\Filters\\AuthorizationFilter\\TokenAuthorizationFilter.cs",
+              "ToolTip": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\Filters\\AuthorizationFilter\\TokenAuthorizationFilter.cs",
+              "RelativeToolTip": "CRUD\\Filters\\AuthorizationFilter\\TokenAuthorizationFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:53:33.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CRUD.csproj",
+              "DocumentMoniker": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\CRUD.csproj",
+              "RelativeDocumentMoniker": "CRUD\\CRUD.csproj",
+              "ToolTip": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\CRUD.csproj",
+              "RelativeToolTip": "CRUD\\CRUD.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-29T09:39:11.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CRUD\\controllers\\HomeController.cs",
+              "ToolTip": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\controllers\\HomeController.cs",
+              "RelativeToolTip": "CRUD\\controllers\\HomeController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAxwCoAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T09:13:44.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\appsettings.json",
+              "RelativeDocumentMoniker": "CRUD\\appsettings.json",
+              "ToolTip": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\appsettings.json",
+              "RelativeToolTip": "CRUD\\appsettings.json",
+              "ViewState": "AQIAABEAAAAAAAAAAAAowCkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-29T08:46:01.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\Program.cs",
+              "RelativeDocumentMoniker": "CRUD\\Program.cs",
+              "ToolTip": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\Program.cs",
+              "RelativeToolTip": "CRUD\\Program.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T08:01:44.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonListActionFilter.cs",
+              "DocumentMoniker": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\Filters\\ActionFilter\\PersonListActionFilter.cs",
+              "RelativeDocumentMoniker": "CRUD\\Filters\\ActionFilter\\PersonListActionFilter.cs",
+              "ToolTip": "D:\\COURS\\C# MIDDLE LEVEL\\ASP.NET CORE\\CRUD\\CRUD\\CRUD\\Filters\\ActionFilter\\PersonListActionFilter.cs",
+              "RelativeToolTip": "CRUD\\Filters\\ActionFilter\\PersonListActionFilter.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T17:30:16.18Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

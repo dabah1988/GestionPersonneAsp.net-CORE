@@ -1,0 +1,61 @@
+2024-04-29 12:00:06.371 +02:00 [FTL] Log critical
+2024-04-29 12:00:06.517 +02:00 [WRN] Log warning
+2024-04-29 12:00:06.857 +02:00 [INF] User profile is available. Using 'C:\Users\yvesd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-29 12:00:07.279 +02:00 [INF] Now listening on: http://localhost:5219
+2024-04-29 12:00:07.421 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-29 12:00:07.426 +02:00 [INF] Hosting environment: Development
+2024-04-29 12:00:07.431 +02:00 [INF] Content root path: D:\COURS\C# MIDDLE LEVEL\ASP.NET CORE\CRUD\CRUD\CRUD
+2024-04-29 12:00:09.365 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/ - null null
+2024-04-29 12:00:09.613 +02:00 [INF] Executing endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 12:00:09.801 +02:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, Boolean, Boolean) on controller CRUD.controllers.HomeController (CRUD).
+2024-04-29 12:00:11.501 +02:00 [INF] In OnActionExecuting
+2024-04-29 12:00:11.504 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 12:00:22.581 +02:00 [INF] In OnActionExecuting
+2024-04-29 12:00:22.595 +02:00 [INF] PersonListActionFilter OnActionExecuting
+2024-04-29 12:00:23.192 +02:00 [INF] in GetAllPersons  
+2024-04-29 12:00:28.390 +02:00 [INF] Executed DbCommand (213ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 12:00:28.731 +02:00 [INF] in GetAllPersons  
+2024-04-29 12:00:28.756 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonId], [p].[Adress], [p].[CountryId], [p].[DateofBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[PossedeLePermis], [p].[ReceivesNewsLetter], [c].[countryId], [c].[countryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryId] = [c].[countryId]
+2024-04-29 12:00:29.067 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 12:00:29.103 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 12:00:29.120 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 12:00:29.133 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 12:00:29.144 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 12:00:29.159 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__countryId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[countryId], [c].[countryName]
+FROM [Countries] AS [c]
+WHERE [c].[countryId] = @__countryId_0
+2024-04-29 12:00:29.175 +02:00 [INF] In OnActionExecuted
+2024-04-29 12:00:32.401 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 12:00:32.403 +02:00 [INF] In OnActionExecuted
+2024-04-29 12:00:33.915 +02:00 [INF] PersonListActionFilter OnActionExecuted
+2024-04-29 12:00:33.936 +02:00 [INF] Executing ViewResult, running view Index.
+2024-04-29 12:00:34.095 +02:00 [INF] Executed ViewResult - view Index executed in 162.0781ms.
+2024-04-29 12:00:34.103 +02:00 [INF] Executed action CRUD.controllers.HomeController.Index (CRUD) in 24297.075ms
+2024-04-29 12:00:34.107 +02:00 [INF] Executed endpoint 'CRUD.controllers.HomeController.Index (CRUD)'
+2024-04-29 12:00:34.131 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/ - 200 null text/html; charset=utf-8 24786.4449ms
+2024-04-29 12:00:34.161 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-29 12:00:34.164 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5219/_vs/browserLink - null null
+2024-04-29 12:00:34.170 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 9.6407ms
+2024-04-29 12:00:34.291 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5219/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.7669ms

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+<link rel="stylesheet" href="~/styles/style.css" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <script type="text/javascript" src="javascript/script.js"></script>
+</head>
+<body>
+    <div>
+     <table align="center"><tr>
+           <td align="center"> <a   asp-controller="Home" asp-action="Index"  href="/" class="monLien">Liste des personnes </a> </td>
+          <td align="center"> <a asp-controller="Country" asp-action="UploadFile" href="~/UploadFile" >Uploader le fichier Excel</a> </td>
+                      </tr>
+            </table>
+        
+        @RenderBody()
+    </div>
+</body>
+</html>
