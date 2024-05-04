@@ -5,47 +5,49 @@
 @model List<CountryPersonne>
 <h1 class="map2">Joueurs</h1>
 <form method="get" action="/">
-<div id="form" >
+    <div id="form">
         <div id="select">
             <select name="searchBy">
                 @foreach (var field in ViewBag.searchields)
                 {
-                <option value="@field.Key">@field.Value</option>
-            }
-                
-    </select></div>
-    <div class="search"> <textarea placeholder="search" name="searchValue"></textarea>  </div>
-    <div>
-        <button class="search">Search</button>
+                    <option value="@field.Key">@field.Value</option>
+                }
+
+            </select>
+        </div>
+        <div class="search"> <textarea placeholder="search" name="searchValue"></textarea>  </div>
+        <div>
+            <button class="search">Search</button>
+        </div>
     </div>
-</div>
-<b> COURAGE</b>
-<table class="htmlDoc">
-    <thead>
+    <b> COURAGE</b>
+    <b> Perseverance</b>
+    <table class="htmlDoc">
+        <thead>
             <tr>
                 <td colspan="2" align="center"><a asp-controller="Home" asp-action="Create" href="/Create">Créer une personne</a></td>
             </tr>
-        <tr>
-            <th>Nom et prénoms</th>
-            <th>Email</th>
-            <th>Pays</th>
-            <th>Adresse</th>
-            <th>Genre</th>
-            <th>Date de Naissance</th>
-           <th>Réception de News</th>
-            <th>Modifier</th>
-             <th>Supprimer</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Exemple de ligne de données -->
-            
-            @if (Model != null && Model.Count > 0 )
+            <tr>
+                <th>Nom et prénoms</th>
+                <th>Email</th>
+                <th>Pays</th>
+                <th>Adresse</th>
+                <th>Genre</th>
+                <th>Date de Naissance</th>
+                <th>Réception de News</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Exemple de ligne de données -->
+
+            @if (Model != null && Model.Count > 0)
             {
-            @foreach (CountryPersonne laPersonne in Model)
+                @foreach (CountryPersonne laPersonne in Model)
                 {
                     if (laPersonne == null) throw new ArgumentNullException("Personne nulle dans index");
-                    if (laPersonne.Person == null || laPersonne.Country == null ) throw new ArgumentNullException("Personne ou pays nulle dans index");
+                    if (laPersonne.Person == null || laPersonne.Country == null) throw new ArgumentNullException("Personne ou pays nulle dans index");
                     <tr>
                         <td><a href="/?searchBy=@nameof(Person.PersonName)&searchValue=@laPersonne.Person.PersonName&ortColumnByAscending=true&isSorted=true">@laPersonne.Person.PersonName </a></td>
                         <td>@laPersonne.Person.Email</td>
@@ -56,17 +58,20 @@
                         <td>@laPersonne.Person.ReceivesNewsLetter</td>
                         <td><a asp-controller="Home" asp-action="Edit" href="/Edit?PersonId=@laPersonne.Person.PersonId">Edit</a></td>
                         <td><a asp-controller="Home" asp-action="Delete" href="/Delete?PersonId=@laPersonne.Person.PersonId">Delete</a></td>
-                     </tr>
+                    </tr>
                 }
-            }else
+            }
+            else
             {
                 <tr>
                     <td class="no-data-message" colspan="9">
                         <img src="~/images/360_F_586210337_WOGOw0l7raEB8F61Muc4hWbvVcyQdk9Z.jpg" width="100px" height="100px" alt="Image de message">
-                    Aucune information concernant vos critères n'a été trouvée   </td>   </tr>
+                        Aucune information concernant vos critères n'a été trouvée
+                    </td>
+                </tr>
             }
-     
-        <!-- Ajoutez d'autres lignes de données ici -->
-    </tbody>
-</table>
+
+            <!-- Ajoutez d'autres lignes de données ici -->
+        </tbody>
+    </table>
 </form>
